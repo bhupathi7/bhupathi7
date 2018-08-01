@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<%= link_to "new",students_new_path%>
+<%= link_to "details",teachers_details_path%>
+<%= link_to "addition",calculators_addition_path%>
+<%= link_to "subtraction",calculators_subtraction_path%>
+<%= link_to "multiplication",calculators_multiplication_path%>
+<%= link_to "division",calculators_division_path%>
+<h1 align="center"> ***********HEADER*************</h1>
+    <title>School</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body style="background: yellow;">
+    <%= yield %>
+  </body>
+  <h1 align="center"> ***********FOOTER*************</h1>
+</html>

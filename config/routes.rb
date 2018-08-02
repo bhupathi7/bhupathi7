@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get 'bhupathi/show'
-  get 'bhupathi/create'
   get 'calculators/addition'
   get 'calculators/subtraction'
   get 'calculators/multiplication'

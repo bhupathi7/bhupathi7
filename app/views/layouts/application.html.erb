@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<%= link_to "new",students_new_path%>
-<%= link_to "details",teachers_details_path%>
-<%= link_to "addition",calculators_addition_path%>
-<%= link_to "subtraction",calculators_subtraction_path%>
-<%= link_to "multiplication",calculators_multiplication_path%>
-<%= link_to "division",calculators_division_path%>
-<h1 align="center"> ***********HEADER*************</h1>
+  <h1 align="center"> ***** Calculators project*****</h1>
+  <div class="sidebar">
+  <h3>  <%=link_to "Addition", calculators_addition_path=%><br/></h3>
+  <h3> <%=link_to "Subtraction", calculators_subtraction_path=%><br/></h3>
+</div>
+
+<div class="sidebar" align="right">
+   <h3> <%=link_to "Multiplication", calculators_multiplication_path=%><br/></h3>
+   <h3> <%=link_to "Division", calculators_division_path=%><br/></h3></h1>
+  </div>
+
+
     <title>School</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -16,8 +21,10 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body style="background: yellow;">
+  <body style="background: #4ef442;">
     <%= yield %>
   </body>
-  <h1 align="center"> ***********FOOTER*************</h1>
+ 
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />  
+     <h1 align="center"> ******End of project*****</h1>
 </html>

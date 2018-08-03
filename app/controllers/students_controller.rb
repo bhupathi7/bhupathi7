@@ -1,5 +1,5 @@
 class StudentsController < ApplicationController
-	def new
+	def details
 		@name="Bhupathi Naidu"
 		@age=22
 	end

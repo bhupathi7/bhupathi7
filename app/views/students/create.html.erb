@@ -1,0 +1,32 @@
+<%= form_tag students_show_path do %>
+	<%= label_tag "first_name" %>
+	<%= text_field_tag :fname %>
+</p>
+<p>
+	<%= label_tag "last_name" %>
+	<%= text_field_tag :lname %>
+</p>
+<p>
+	<%= label_tag "full_name" %>
+	<%= text_field_tag :fullname %>
+</p>
+<p>
+	<%= label_tag 'dob' %>
+	<%= date_field_tag 'dob' %>
+</p>
+<p>
+	<%= label_tag 'male' %> <%= radio_button_tag 'gender', 'male' %>
+	<%= label_tag 'female' %> <%= radio_button_tag 'gender', 'male' %>
+</p>
+<p>
+	<%= label_tag 'course' %>
+	<%= select_tag 'course',"<option>B.sc</option><option>M.sc</option><option>M.C.A</option><option>M.B.A</option>".html_safe %>
+</p>
+<p>
+	<%= label_tag 'address' %>
+	<%= text_area_tag :address %>
+</p>
+<p>
+	<%= submit_tag "submit" %>
+</p> 
+<% end %>

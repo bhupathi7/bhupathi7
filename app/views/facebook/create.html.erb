@@ -1,0 +1,32 @@
+<%= form_tag facebook_show_path do %>
+<%= field_set_tag do %>
+<legend> facebook signin page</legend>
+<p>
+	<%= label_tag 'fname' %>
+	<%= text_field_tag 'fname' %>
+</p>
+<p>
+	<%= label_tag 'lname' %>
+	<%= text_field_tag 'lname' %>
+</p>
+<p>
+	<%= label_tag 'fullname' %>
+	<%= text_field_tag 'fullname' %>
+</p>
+<p>
+	<%= label_tag 'password' %>
+	<%= text_field_tag 'password' %>
+</p>
+<p>
+	<%= label_tag 'confirmpassword' %>
+	<%= text_field_tag 'confirmpassword' %>
+</p>
+<p>
+	<%= submit_tag "submit" %>
+</p>   
+<p>
+    <%= label_tag 'Remember me' %>
+    <%= check_box_tag 'Remember me' %>
+</p>
+<% end %>
+<% end %>

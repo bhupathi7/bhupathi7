@@ -4,4 +4,10 @@ class TeachersController < ApplicationController
 		@age = 40
 		@address = "Anantapur"
 	end
+	def create
+	end
+
+
+	def show
+	end
 end

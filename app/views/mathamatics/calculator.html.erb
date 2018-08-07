@@ -1,0 +1,37 @@
+<%= form_tag mathamatics_calculator_path do%>
+<table border="2px" width="300px" cellspacing="20px" cellpadding="10px" align="center">
+	<tr>
+		<td colspan="3" style="border: 0px">
+	<%=text_field_tag 'txtAns'%>
+</td>
+<td style="background-color: blue;">clear</td>
+<td style="background-color: red;">AC</td>
+<tr>
+	<td>7</td>
+	<td>8</td>
+	<td>9</td>
+	<td>*</td>
+	<td>=</td>
+</tr>
+<tr>
+	<td>4</td>
+	<td>5</td>
+	<td>6</td>
+	<td>-</td>
+	<td>%</td>
+</tr>
+<tr>
+	<td>1</td>
+	<td>2</td>
+	<td>3</td>
+	<td rowspan="2">+</td>
+	<td>&</td>
+</tr>
+<tr>
+	<td>log</td>
+	<td>0</td>
+	<td>.</td>
+	<td>/ </td>
+</tr>
+</table>
+<% end %>

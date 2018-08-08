@@ -1,0 +1,19 @@
+<%= form_tag teachers_show_path do %>
+	<%= label_tag "name" %>
+	<%= text_field_tag :name %>
+</p>
+	<%= label_tag "age" %>
+	<%= number_field_tag :age %>
+</p>
+<p>
+	<%= label_tag 'male' %> <%= radio_button_tag 'gender', 'male' %>
+	<%= label_tag 'female' %> <%= radio_button_tag 'gender', 'male' %>
+</p>
+<p>
+	<%= label_tag 'address' %>
+	<%= text_area_tag :address %>
+</p>
+<p>
+	<%= submit_tag "submit" %>
+</p> 
+<% end %>

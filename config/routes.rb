@@ -14,5 +14,6 @@ post  'students/show'
   get 'teachers/details'
   get 'teachers/create'
   get 'teachers/show'
+post  'teachers/show'
 end
 

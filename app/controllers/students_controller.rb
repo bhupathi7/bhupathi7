@@ -8,12 +8,9 @@ class StudentsController < ApplicationController
 
 
 	def show
-		@fname = params[:fname] 
-		@lname = params[:lname] 
-        @fullname = params[:fullname] 
-		@dob = params[:dob]
-		@gender = params[:gender]
-		@course = params[:course]
+@stu = Student.new(name: params[:name],age: params[:age],gender: params[:gender],address: params[:address])
+  @stu.save
+@students=Student.all
 	end
 
 end

@@ -1,0 +1,9 @@
+<h1> Teachers details </h1>
+<%= @teachers.each do |t| %>
+<p>
+	Name : <%= t.name %>
+	Age : <%= t.age %>
+	Gender : <%= t.gender %>
+	Address : <%= t.address %>
+</p>
+<% end %>

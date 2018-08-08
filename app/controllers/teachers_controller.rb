@@ -9,5 +9,10 @@ class TeachersController < ApplicationController
 
 
 	def show
+	@t = Teacher.new(name: params[:name],age: params[:age],gender: params[:gender],address: params[:address])
+  @t.save
+
+@teachers=Teacher.all
+
 	end
 end

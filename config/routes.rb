@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
-  get 'facebook/create'
-  get 'facebook/show'
- post 'facebook/show'
-  get 'mathamatics/calculator'
+
   get 'calculators/addition'
   get 'calculators/subtraction'
   get 'calculators/multiplication'

@@ -1,9 +1,22 @@
-<h1> Student details </h1>
-<%= @students.each do |s| %>
-<p>
-	Name : <%= s.name %>
-	Age : <%= s.age %>
-	Gender : <%= s.gender %>
-	Address : <%= s.address %>
-</p>
+<table border="2">
+<thead>
+	<th> name </th>
+	<th> age </th>
+	<th> gender </th>
+	<th> address </th>
+<tbody>
+<% @students.each do |s| %>
+ <% if s.name == nil %>
+ 	<% puts "kishore" %>
+ 	<% next %>
+ <% end %>
+ <tr>
+ 	<td> <%= s.name %> </td>
+	<td> <%= s.age %> </td>
+	<td> <%= s.gender %> </td>
+	<td> <%= s.address %></td>
+ </tr>
 <% end %>
+</tbody>
+</thead>
+</table>
